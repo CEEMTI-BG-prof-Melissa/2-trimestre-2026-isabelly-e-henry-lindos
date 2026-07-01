@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Controles de Formulários</title>
+    </head>
+    <body>
+        <h1>Preferências</h1>
+        <form acrion="index.html" method="GET">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+            <p>Qual Turno Você prefere estudar?</p>
+            <input type="radio" id="turno" name="manha"><label for="manha">Manhã</label><br>
+            <input type="radio" id="turno" name="tarde"><label for="tarde">Tarde</label><br>
+            <input type="radio" id="turno" name="noite"><label for="noire">Noite</label><br>
+            <p>Quais áreas da tecnologia você tem interesse?</p>
+            <input type="checkbox" id="areas" name="programacao"><label for="programacao">Programação</label><br>
+            <input type="checkbox" id="areas" name="Design"><label for="Design">Design</label><br>
+            <input type="checkbox" id="areas" name="Bancodedados"><label for="Bancodedados">Banco de dados</label><br>
+            <input type="checkbox" id="areas" name="Redes"><label for="Redes">Redes</label><br>
+            <p>Qual sua cor favorita? <input type="color" id="color" name="color"></p>
+            <p>Qual o seu nivel de satisfação? <input type="range" id="range" name="range"></p>
+            <p>Qual o seu horário preferido? <input type="time" id="tempo" name="tempo"></p>
+            <p>Envie um arquivo <input type="file" id="arquivo" name="arquivo"></p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </form>
+    </body>
+</html>
