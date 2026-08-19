@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <meta charset="UTF-8">
     </head>
     <body>
         <?php
+       
+        $preco = 120;
+        $quantidade = 3;
+        $desconto = 30;
+        $parcelas = 2;
             
-        $pre = 120;
-        $qnt = 3;
-        $des = 30;
-        $pars = 2;
+       
+        $total = $preco * $quantidade;
+        $valorFinal = $total - $desconto;
+        $valorParcial = $valorFinal / $parcelas;
+        $valorComTaxa = $valorFinal + 15;
+        $resto = $valorFinal;
             
-            $ttl = $pre * $qnt;
-            $vF = $ttl - $des;
-            $vP = $vF / $pars;
-           $vCT = $vF + 15;
-            $resto = $vF % 2;
-            
-        echo "Valor total da compra: R$ $ttl<br>";
-         echo "Valor após o desconto: R$ $vF<br>";
-        echo "Valor de cada parcela: R$ $vP<br>";
-         echo "Valor com taxa de R$ 15,00: R$ $vCT<br>";
+       
+        echo "Valor total da compra: R$ $total<br>";
+        echo "Valor após o desconto: R$ $valorFinal<br>";
+        echo "Valor de cada parcela: R$ $valorParcial<br>";
+        echo "Valor com taxa de R$ 15,00: R$ $valorComTaxa<br>";
         echo "Resto da divisão por 2: $resto";
         ?>
     </body>
